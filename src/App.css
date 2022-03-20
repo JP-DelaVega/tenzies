@@ -64,6 +64,7 @@ main{
 button{
   border: 0px;
   width: 105px;
+  font-size:14px
   height: 38px;
   background-color: royalblue;
   color: white;
@@ -96,7 +97,7 @@ p{
 
 .record{
   position: absolute;
-  top:29.8%;
+  top:30%;
   width: 50vh;
   height: 50vh;
   background: #F5F5F5;
