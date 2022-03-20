@@ -71,7 +71,7 @@ button{
   cursor: pointer;
 }
 button:active {
-  background-color: blue;
+  background-color: rgb(0, 65, 243);
 }
 
 h1{
@@ -135,6 +135,11 @@ h3{
   height: 41px;
   -webkit-filter: drop-shadow(0px 0px 2px #222 );
   filter: drop-shadow(0px 0px 2px #222);
+}
+.rightTracker img:active{
+  height: 40px;
+  -webkit-filter: drop-shadow(0px 0px 1px #222 );
+  filter: drop-shadow(0px 0px 1px #222);
 }
 
 .rightTracker{
