@@ -63,8 +63,8 @@ main{
 
 button{
   border: 0px;
-  width: 92.16px;
-  height: 35.84px;
+  width: 105px;
+  height: 38px;
   background-color: royalblue;
   color: white;
   border-radius: 3.81px;
@@ -96,7 +96,7 @@ p{
 
 .record{
   position: absolute;
-  top:29.3%;
+  top:29.8%;
   width: 50vh;
   height: 50vh;
   background: #F5F5F5;
