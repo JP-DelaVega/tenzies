@@ -15,12 +15,11 @@ function App() {
   const [modal, setModal] = React.useState(false)
   let myLocalStorage = JSON.parse(localStorage.getItem('record'))
 
-
   React.useEffect(() => {
     const allTrue = dice.every(die => die.isHeld === true)
     const allEqual = dice.every(die => die.value === dice[0].value)
     if (allTrue && allEqual) {
-      /****************************************************************************************/
+      /************************setting up the timer***************************/
       const hour = time.h > 10 ? time.h : "0" + time.h
       const minute = time.m > 10 ? time.m : "0" + time.m
       const seconds = time.s > 10 ? time.s : "0" + time.s
@@ -32,7 +31,7 @@ function App() {
         myBestTracker: bestTracker
       }
 
-      /*****/
+      /***Adding to Local Storage**/
       let collection
       if (myLocalStorage === null) {
         collection = []
@@ -41,10 +40,7 @@ function App() {
       }
       collection.push(myRecord)
       localStorage.setItem("record", JSON.stringify(collection))
-
-      /*****/
-
-      /****************************************************************************************/
+      
       setTenzies(true)
       stop()
     }
@@ -65,9 +61,7 @@ function App() {
   }
   function holdDice(id) {
     setDice(oldDice => oldDice.map(die => {
-      return die.id === id ?
-        { ...die, isHeld: !die.isHeld } :
-        die
+      return die.id === id ?{ ...die, isHeld: !die.isHeld } : die
     }))
   }
   function generateNewDie() {
@@ -89,7 +83,7 @@ function App() {
       )
     }
   )
-  /***********************************/
+  /***************Sorting of the records********************/
   if (myLocalStorage != null) {
     myLocalStorage.sort((a, b) => {
       if (a.myBestTracker < b.myBestTracker) {
@@ -103,6 +97,7 @@ function App() {
   }
   let num = 0
   let display
+  /****************Displaying of the records*******************/
   if (myLocalStorage != null) {
     display = myLocalStorage.map(
       item => {
@@ -115,14 +110,14 @@ function App() {
       }
     )
   }
-  /***********************************/
+  
   function endGame() {
     if (!tenzies) {
       setRollCount(prevState => prevState + 1)
       return roll()
     }
     else {
-      let text;
+      /*************Reseting the game if the user hit yes**********************/
       if (confirm("Are you sure you want to start new game?") == true) {
         setTenzies(prevState => !prevState)
         setDice(ranNum())
@@ -136,15 +131,11 @@ function App() {
       }
     }
   }
-
-
-  /** */  /** */  /** */  /** */  /** */  /** */  /** */  /** */  /** */  /** */  /** */
-
+/**************For time Timer*********************/
   let UpdatedMS = time.ms,
     UpdatedS = time.s,
     UpdatedM = time.m,
     UpdatedH = time.h
-
 
   const start = () => {
     setStatus(true)
@@ -175,11 +166,9 @@ function App() {
   function myModal() {
     setModal(prevState => !prevState)
   }
-  /** */  /** */  /** */  /** */  /** */  /** */  /** */  /** */  /** */  /** */  /** */  /** */
   
   return (
     <div className='content'>
-
       <div className='tracker'>
         <div className='leftTracker'>
           <div className='Score'>Score:</div>
@@ -194,7 +183,6 @@ function App() {
         </div>
         <div className='rightTracker'>
           <img src={require('./dice/trophy.png')} onClick={myModal} />
-
         </div>
       </div>
       <main>
@@ -203,7 +191,6 @@ function App() {
         <p className="instructions">Roll until all dice are the same.
           Click each die to freeze it at its current value between rolls.</p>
         <div className='dice'>{dies}</div>
-
         {status ? <button onClick={endGame}>{tenzies ? "New Game" : "Roll"}</button> : <button onClick={start}>Start Game</button>}
       </main>
       {modal && <div className='record'> 
