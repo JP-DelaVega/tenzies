@@ -118,7 +118,7 @@ function App() {
     }
     else {
       /*************Reseting the game if the user hit yes**********************/
-      if (confirm("Are you sure you want to start new game?") == true) {
+      if (window.confirm("Are you sure you want to start new game?") == true) {
         setTenzies(prevState => !prevState)
         setDice(ranNum())
         setRollCount(0)
