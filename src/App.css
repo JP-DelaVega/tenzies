@@ -123,6 +123,9 @@ font-size:20px;
 .leftTracker{
 font-size: 18px;
 }
+.title{
+font-size:35px;
+}
 hr{
   width: 100%;
   border:2px  solid red;
