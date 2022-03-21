@@ -29,8 +29,11 @@ body {
 .tracker div{
   padding: 5px;
 }
-
-main{
+.hide-main{
+  display: none;
+}
+.main{
+  display: block;
   width: 400px;
   height: 400px;
   background: #F5F5F5;
@@ -95,8 +98,6 @@ p{
 }
 
 .record{
-  position: absolute;
-  top:36.5%;
   width: 400px;
   height: 400px;
   background: #F5F5F5;
