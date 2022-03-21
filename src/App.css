@@ -94,7 +94,6 @@ p{
   margin-bottom: -10px;
 }
 
-
 .record{
   position: absolute;
   top:30.4%;
@@ -117,10 +116,20 @@ p{
   margin-left: -3px;
   color: red;
 }
+
 .instructions{
 font-size:20px;
 text-align: justify;
 text-justify: inter-word;
+}
+.record-title{
+  font-size:35px;
+}
+.top-10{
+font-size: 19px;
+}
+.identifier{
+font-size:19px
 }
 .leftTracker{
 font-size: 18px;
