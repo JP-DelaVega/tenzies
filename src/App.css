@@ -125,6 +125,8 @@ font-size: 18px;
 }
 .title{
 font-size:45px;
+text-align: justify;
+text-justify: inter-word;
 }
 hr{
   width: 100%;
