@@ -66,9 +66,9 @@ body {
 
 button{
   border: 0px;
-  width: 115px;
-  font-size:14px;
-  height: 38px;
+  width: 117px;
+  font-size:18px;
+  height: 42px;
   background-color: royalblue;
   color: white;
   border-radius: 3.81px;
@@ -125,6 +125,8 @@ text-justify: inter-word;
 }
 .record-title{
   font-size:45px;
+  margin-top:-5px;
+  margin-bottom:-5px
 }
 .top-10{
 font-size: 19px;
