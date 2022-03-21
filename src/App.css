@@ -123,10 +123,11 @@ text-align: justify;
 text-justify: inter-word;
 }
 .record-title{
-  font-size:35px;
+  font-size:45px;
 }
 .top-10{
 font-size: 19px;
+padding-: 2px;
 }
 .identifier{
 font-size:19px
