@@ -31,8 +31,8 @@ body {
 }
 
 main{
-  width: 390px;
-  height: 390px;
+  width: 400px;
+  height: 400x;
   background: #F5F5F5;
   border-radius: 10px;
   padding: 20px;
@@ -63,7 +63,7 @@ main{
 
 button{
   border: 0px;
-  width: 105px;
+  width: 115px;
   font-size:14px;
   height: 38px;
   background-color: royalblue;
@@ -96,9 +96,9 @@ p{
 
 .record{
   position: absolute;
-  top:40%;
-  width: 390px;
-  height: 390px;
+  top:35%;
+  width: 400px;
+  height: 400px;
   background: #F5F5F5;
   border-radius: 10px;
   padding: 20px;
