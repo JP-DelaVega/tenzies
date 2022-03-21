@@ -185,8 +185,8 @@ function App() {
           <img src={require('./dice/trophy.png')} onClick={myModal} />
         </div>
       </div>
-      <main>
-        {tenzies && <Confetti className='confetti' />}
+      {tenzies && <Confetti className='confetti' />}
+      <main className={modal == false ? "main" : "hide-main"}>
         <h1 className="title">Tenzies</h1>
         <p className="instructions">Roll until all dice are the same.
           Click each die to freeze it at its current value between rolls.</p>
