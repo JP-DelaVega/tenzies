@@ -194,7 +194,7 @@ function App() {
         {status ? <button onClick={endGame}>{tenzies ? "New Game" : "Roll"}</button> : <button onClick={start}>Start Game</button>}
       </main>
       {modal && <div className='record'> 
-      <h1>TOP 10</h1>
+      <h1 className='record-title'>TOP 10</h1>
       <hr /> 
       <div className='identifier'>Top&emsp;&nbsp;&nbsp;Roll&nbsp;&nbsp;&nbsp; Time</div>
       {display}
