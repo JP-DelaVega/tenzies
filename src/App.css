@@ -17,8 +17,8 @@ body {
 }
 
 .tracker{
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  height: 50%;
   background: #F5F5F5;
   border-radius: 10px;
   text-indent: 10px;
@@ -31,8 +31,8 @@ body {
 }
 
 main{
-  width: 30%;
-  height: 70%;
+  width: 370px;
+  height: 370px;
   background: #F5F5F5;
   border-radius: 10px;
   padding: 20px;
@@ -43,8 +43,8 @@ main{
   
 }
 .die{
-  width: 7vh;
-  height : 7vh;
+  width: 60px;
+  height : 60px;
   background: #FFFFFF;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
   border-radius: 3.81277px;
@@ -97,8 +97,8 @@ p{
 .record{
   position: absolute;
   top:30.4%;
-  width: 400px;
-  height: 400px;
+  width: 370px;
+  height: 370px;
   background: #F5F5F5;
   border-radius: 10px;
   padding: 20px;
